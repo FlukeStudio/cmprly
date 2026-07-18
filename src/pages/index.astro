@@ -1,0 +1,182 @@
+---
+import BaseLayout from "../layouts/Base.astro";
+---
+
+<section class="hero">
+  <h1>Simply compare. <span class="highlight">Honestly decide.</span></h1>
+  <p class="subtitle">
+    Independent, structured comparisons of software & SaaS for smart buyers.
+    No fluff, no fake reviews — just the facts you need.
+  </p>
+  <div class="hero-links">
+    <a href="/compare/" class="btn-primary">Browse Comparisons</a>
+    <a href="/best/" class="btn-secondary">Best-Of Guides</a>
+  </div>
+</section>
+
+<section class="categories">
+  <h2>What we compare</h2>
+  <div class="category-grid">
+    <a href="/best/email-marketing/" class="category-card">
+      <h3>📧 Email Marketing</h3>
+      <p>Kit vs Mailchimp vs Brevo &amp; more — find the right tool for your audience.</p>
+    </a>
+    <div class="category-card coming-soon">
+      <h3>📋 CRM <span class="badge">Coming Soon</span></h3>
+      <p>HubSpot vs Monday vs Pipedrive — CRM comparisons for small teams.</p>
+    </div>
+    <div class="category-card coming-soon">
+      <h3>📊 Project Management <span class="badge">Coming Soon</span></h3>
+      <p>Notion vs ClickUp vs Asana — which PM tool fits your workflow?</p>
+    </div>
+    <div class="category-card coming-soon">
+      <h3>☁️ Web Hosting <span class="badge">Coming Soon</span></h3>
+      <p>Hostinger vs SiteGround vs Bluehost — hosting that won&apos;t break the bank.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why-us">
+  <h2>Why Cmprly?</h2>
+  <div class="why-grid">
+    <div class="why-item">
+      <strong>🔍 Independently Researched</strong>
+      <p>Every comparison is based on publicly verifiable data — official pricing pages, changelogs, and real user reviews. No vendor-sponsored rankings.</p>
+    </div>
+    <div class="why-item">
+      <strong>📊 Structured &amp; Scannable</strong>
+      <p>Side-by-side comparison tables, pricing breakdowns at every tier, and FAQ sections that answer what you actually care about.</p>
+    </div>
+    <div class="why-item">
+      <strong>🕐 Always Up-to-Date</strong>
+      <p>Every article carries a "Last verified" date. We recheck pricing and features quarterly — stale comparisons help nobody.</p>
+    </div>
+    <div class="why-item">
+      <strong>💰 Transparent Monetization</strong>
+      <p>We earn through affiliate commissions at no extra cost to you. When we recommend a tool, we tell you exactly why — and whether we get paid if you buy.</p>
+    </div>
+  </div>
+</section>
+
+<section class="latest">
+  <h2>Latest Comparisons</h2>
+  <div class="latest-grid">
+    <a href="/compare/kit-vs-mailchimp-vs-brevo/" class="latest-card">
+      <span class="date">July 2026</span>
+      <h3>Kit (ConvertKit) vs Mailchimp vs Brevo</h3>
+      <p>Which email marketing tool wins for creators? Free plans, pricing breakdowns, and automation compared.</p>
+    </a>
+  </div>
+</section>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    color: #111;
+  }
+  .highlight {
+    color: #2563eb;
+  }
+  .subtitle {
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  .hero-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn-primary, .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .btn-primary {
+    background: #2563eb;
+    color: #fff;
+  }
+  .btn-primary:hover { background: #1d4ed8; }
+  .btn-secondary {
+    background: #f3f4f6;
+    color: #111;
+    border: 1px solid #e5e7eb;
+  }
+  .btn-secondary:hover { background: #e5e7eb; }
+
+  .categories, .why-us, .latest {
+    max-width: 960px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+  }
+  .categories h2, .why-us h2, .latest h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #111;
+  }
+  .category-grid, .why-grid, .latest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  .category-card, .latest-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.15s, border-color 0.15s;
+  }
+  .category-card:hover, .latest-card:hover {
+    border-color: #2563eb;
+    box-shadow: 0 2px 12px rgba(37,99,235,0.1);
+  }
+  .coming-soon {
+    opacity: 0.65;
+    pointer-events: none;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    background: #fef3c7;
+    color: #92400e;
+    padding: 2px 8px;
+    border-radius: 10px;
+    vertical-align: middle;
+  }
+  .category-card h3, .latest-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .category-card p, .latest-card p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  .latest-card .date {
+    font-size: 0.8rem;
+    color: #2563eb;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .why-item strong {
+    display: block;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+  }
+  .why-item p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+</style>

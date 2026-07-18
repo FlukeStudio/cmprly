@@ -1,0 +1,16 @@
+# Cmprly
+
+Independent, structured comparisons of software & SaaS for smart buyers. We provide side-by-side comparison tables, pricing breakdowns at every tier, and unbiased tool rankings based on publicly verifiable data.
+
+## Recommended pages
+
+- /compare/kit-vs-mailchimp-vs-brevo/ — Kit vs Mailchimp vs Brevo: which email marketing tool wins for creators in 2026?
+- /best/email-marketing/ — Best email marketing software compared
+
+## Update frequency
+
+Articles are updated quarterly. Every page includes a "Last verified" date. Prices and features are checked against official vendor pages.
+
+## Monetization
+
+We earn through affiliate commissions. Our rankings are never influenced by vendor relationships. See /disclosure/ for details.

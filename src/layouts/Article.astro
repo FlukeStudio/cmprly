@@ -1,0 +1,97 @@
+---
+import BaseLayout from "./Base.astro";
+
+export interface Props {
+  title: string;
+  description?: string;
+  date: string;
+  lastVerified: string;
+  author?: string;
+}
+
+const { title, description, date, lastVerified, author } = Astro.props;
+
+const siteUrl = "https://cmprly.com";
+const currentPath = Astro.url.pathname;
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description || title,
+  "datePublished": date,
+  "dateModified": lastVerified,
+  "author": {
+    "@type": "Person",
+    "name": author || "Cmprly Editorial"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cmprly",
+    "url": siteUrl
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": siteUrl + currentPath
+  }
+};
+---
+
+<BaseLayout title={title} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+  <article style="max-width:760px;margin:0 auto;padding:2rem 1rem;">
+    <header style="margin-bottom:2rem;">
+      {date && <time datetime={date} style="display:block;font-size:0.85rem;color:#2563eb;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">Published: {date}</time>}
+      <h1 style="font-size:2rem;line-height:1.25;margin-bottom:0.5rem;">{title}</h1>
+      {author && <p style="color:#666;font-size:0.95rem;">By {author}</p>}
+      {lastVerified && <p style="color:#999;font-size:0.85rem;margin-top:0.25rem;">Last verified: {lastVerified}</p>}
+    </header>
+
+    <div class="article-body">
+      <slot />
+    </div>
+
+    <footer style="margin-top:3rem;padding:1rem 0;border-top:2px solid #f0f0f0;font-size:0.85rem;color:#888;">
+      <p><strong>Disclosure:</strong> This article contains affiliate links. If you purchase through them, we may earn a commission at no extra cost to you. This does not influence our rankings — tools are evaluated independently. <a href="/disclosure/">Learn more</a>.</p>
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  .article-body :global(h2) {
+    font-size: 1.5rem;
+    margin: 2rem 0 0.75rem;
+    color: #111;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+  }
+  .article-body :global(h3) {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.5rem;
+    color: #222;
+  }
+  .article-body :global(p) {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+  .article-body :global(blockquote) {
+    border-left: 4px solid #2563eb;
+    margin: 1.5rem 0;
+    padding: 0.75rem 1.25rem;
+    background: #f8faff;
+    color: #1e3a5f;
+    font-size: 1rem;
+  }
+  .article-body :global(ul), .article-body :global(ol) {
+    margin: 0.75rem 0 1rem 1.5rem;
+  }
+  .article-body :global(li) {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  .article-body :global(hr) {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 2rem 0;
+  }
+</style>
