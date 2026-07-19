@@ -43,14 +43,14 @@ const jsonLd = {
       {date && <time datetime={date} style="display:block;font-size:0.85rem;color:#2563eb;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">Published: {date}</time>}
       <h1 style="font-size:2rem;line-height:1.25;margin-bottom:0.5rem;">{title}</h1>
       {author && <p style="color:#666;font-size:0.95rem;">By {author}</p>}
-      {lastVerified && <p style="color:#999;font-size:0.85rem;margin-top:0.25rem;">Last verified: {lastVerified}</p>}
+      {lastVerified && <p style="color:#6b7280;font-size:0.85rem;margin-top:0.25rem;">Last verified: {lastVerified}</p>}
     </header>
 
     <div class="article-body">
       <slot />
     </div>
 
-    <footer style="margin-top:3rem;padding:1rem 0;border-top:2px solid #f0f0f0;font-size:0.85rem;color:#888;">
+    <footer style="margin-top:3rem;padding:1rem 0;border-top:2px solid #f0f0f0;font-size:0.85rem;color:#6b7280;">
       <p><strong>Disclosure:</strong> This article contains affiliate links. If you purchase through them, we may earn a commission at no extra cost to you. This does not influence our rankings — tools are evaluated independently. <a href="/disclosure/">Learn more</a>.</p>
     </footer>
   </article>

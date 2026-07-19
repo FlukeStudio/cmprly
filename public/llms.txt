@@ -1,16 +1,20 @@
 # Cmprly
 
-Independent, structured comparisons of software & SaaS for smart buyers. We provide side-by-side comparison tables, pricing breakdowns at every tier, and unbiased tool rankings based on publicly verifiable data.
+> Independent, structured comparisons of software & SaaS. Side-by-side tables, pricing breakdowns at every tier, and unbiased tool rankings based on publicly verifiable data.
 
-## Recommended pages
+## Latest comparisons
 
-- /compare/kit-vs-mailchimp-vs-brevo/ — Kit vs Mailchimp vs Brevo: which email marketing tool wins for creators in 2026?
-- /best/email-marketing/ — Best email marketing software compared
+- [Kit vs Mailchimp vs Brevo](https://cmprly.com/compare/kit-vs-mailchimp-vs-brevo/): Which email marketing tool wins for creators in 2026?
+- [Kit Review 2026](https://cmprly.com/compare/kit-review-2026/): The creator's email marketing platform — free plan, automation, commerce.
+- [Brevo Review 2026](https://cmprly.com/compare/brevo-review-2026/): The budget email marketing powerhouse with send-volume pricing.
+- [Email Marketing Automation Tools Compared](https://cmprly.com/compare/email-marketing-automation-tools-compared/): Kit vs Mailchimp vs Brevo vs ActiveCampaign.
 
-## Update frequency
+## Best-of guides
 
-Articles are updated quarterly. Every page includes a "Last verified" date. Prices and features are checked against official vendor pages.
+- [Best Email Marketing for Solopreneurs](https://cmprly.com/best/best-email-marketing-for-solopreneurs/): 5 tools compared for creators, freelancers, and one-person businesses.
+- [Email Marketing Pricing: Real Cost at Every Tier](https://cmprly.com/best/email-marketing-pricing-real-cost/): 500 to 100K subscribers — what you actually pay.
 
-## Monetization
+## Optional pages
 
-We earn through affiliate commissions. Our rankings are never influenced by vendor relationships. See /disclosure/ for details.
+- [About](https://cmprly.com/about/): Our methodology, author, and editorial policy.
+- [Disclosure](https://cmprly.com/disclosure/): How we make money and why you can trust our recommendations.
